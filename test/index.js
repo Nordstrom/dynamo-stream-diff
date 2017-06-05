@@ -1,3 +1,5 @@
+'use strict'
+
 describe('dynamoStreamDiff', () => {
   const dynamoStreamDiff = require('../index.js')
 

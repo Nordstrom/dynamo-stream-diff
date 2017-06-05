@@ -1,3 +1,5 @@
+'use strict'
+
 function deepFind (obj, path) {
   let paths = path.split('.')
   let current = obj
