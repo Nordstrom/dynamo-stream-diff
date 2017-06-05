@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "coverage": "nyc --reporter=lcov npm test",
-    "coveralls": "nyc --reporter=text-lcov npm test",
+    "coveralls": "nyc --reporter=text-lcov npm test | coveralls",
     "lint:fix": "node_modules/.bin/standard --fix",
     "pretest": "npm run lint:fix",
     "test": "node_modules/.bin/mocha --require test/helpers/common"

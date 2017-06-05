@@ -1,4 +1,5 @@
 # Dynamo Stream Diff
+[![Build Status][ci-img]][ci] [![Coverage Status][cov-img]][cov] 
 
 Allows comparing of new and old images from dynamo stream records. Note, this only works on Dynamo Streams with 
 a `StreamViewType` of `NEW_AND_OLD_IMAGES`
@@ -124,3 +125,8 @@ module.exports.handler = function(event, context, callback) {
   ]
 }
 ```
+
+[ci-img]: https://travis-ci.org/Nordstrom/dynamo-stream-diff.svg?branch=master
+[ci]: https://travis-ci.org/Nordstrom/dynamo-stream-diff
+[cov-img]: https://coveralls.io/repos/github/Nordstrom/dynamo-stream-diff/badge.svg?branch=master
+[cov]: https://coveralls.io/github/Nordstrom/dynamo-stream-diff?branch=master
