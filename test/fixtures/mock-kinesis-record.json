@@ -1,0 +1,16 @@
+{
+  "kinesis": {
+    "kinesisSchemaVersion": "1.0",
+    "partitionKey": "1",
+    "sequenceNumber": "2",
+    "data": "heressomedata",
+    "approximateArrivalTimestamp": 1471048720.331
+  },
+  "eventSource": "aws:kinesis",
+  "eventVersion": "1.0",
+  "eventID": "shardId-000000000002:4",
+  "eventName": "aws:kinesis:record",
+  "invokeIdentityArn": "arn:aws:iam::00000",
+  "awsRegion": "us-west-2",
+  "eventSourceARN": "arn:aws:kinesis:us-west-2:00000:stream/kinesis-stream-name"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "dynamo-stream-diff",
+  "version": "0.0.1",
+  "description": "Provides diff of new and old images of dynamo stream record",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "nyc --reporter=lcov npm test",
+    "coveralls": "nyc --reporter=text-lcov npm test",
+    "lint:fix": "node_modules/.bin/standard --fix",
+    "pretest": "npm run lint:fix",
+    "test": "node_modules/.bin/mocha --require test/helpers/common"
+  },
+  "author": "Katie Steinberg <katie.h.steinberg@nordstrom.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "chai": "^4.0.1",
+    "coveralls": "^2.13.1",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.1",
+    "standard": "^10.0.2"
+  },
+  "keywords": ["dynamodb", "aws", "lambda", "serverless", "dynamo"],
+  "standard": {
+    "globals": [
+      "describe",
+      "it",
+      "expect",
+      "chai",
+      "after",
+      "before"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/Nordstrom/dynamo-stream-diff/issues"
+  },
+  "dependencies": {
+    "dynamodb-marshaler": "^2.0.0"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "awsRegion": "us-west-2",
+  "dynamodb": {
+    "ApproximateCreationDateTime": 123456789,
+    "Keys": {
+      "id" : {
+        "S": "abc"
+      }
+    },
+    "NewImage": {
+      "id" : {
+        "S": "abc"
+      },
+      "name" : {
+        "S": "new-name"
+      },
+      "size" : {
+        "N": 456
+      },
+      "enabled" : {
+        "BOOL": true
+      }
+    },
+    "OldImage": {
+      "id" : {
+        "S": "abc"
+      },
+      "name" : {
+        "S": "old-name"
+      },
+      "size" : {
+        "N": 123
+      },
+      "enabled" : {
+        "BOOL": false
+      }
+    },
+    "SequenceNumber": "seq-num",
+    "SizeBytes": 1245,
+    "StreamViewType": "NEW_AND_OLD_IMAGES"
+  },
+  "eventID": "event-id",
+  "eventName": "MODIFY",
+  "eventSource": "event-source",
+  "eventVersion": "event-version"
+}

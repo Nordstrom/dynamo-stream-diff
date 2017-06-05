@@ -1,0 +1,61 @@
+{
+  "awsRegion": "us-west-2",
+  "dynamodb": {
+    "ApproximateCreationDateTime": 123456789,
+    "Keys": {
+      "id" : {
+        "S": "abc"
+      }
+    },
+    "NewImage": {
+      "id" : {
+        "S": "Store1"
+      },
+      "name" : {
+        "S": "Nordstrom"
+      },
+      "address" : {
+        "M": {
+          "street1": {
+            "S": "500 Pine St"
+          },
+          "city": {
+            "S": "Seattle"
+          },
+          "state": {
+            "S": "WA"
+          }
+        }
+      }
+
+    },
+    "OldImage": {
+      "id" : {
+        "S": "Store1"
+      },
+      "name" : {
+        "S": "Wallin & Nordstrom"
+      },
+      "address" : {
+        "M": {
+          "street1": {
+            "S": "4th & Pine"
+          },
+          "city": {
+            "S": "Seattle"
+          },
+          "state": {
+            "S": "WA"
+          }
+        }
+      }
+    },
+    "SequenceNumber": "seq-num",
+    "SizeBytes": 1245,
+    "StreamViewType": "NEW_AND_OLD_IMAGES"
+  },
+  "eventID": "event-id",
+  "eventName": "MODIFY",
+  "eventSource": "event-source",
+  "eventVersion": "event-version"
+}
