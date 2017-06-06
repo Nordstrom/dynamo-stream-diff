@@ -1,6 +1,6 @@
 {
   "name": "dynamo-stream-diff",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Provides diff of new and old images of dynamo stream record",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,13 @@
     "nyc": "^11.0.1",
     "standard": "^10.0.2"
   },
-  "keywords": ["dynamodb", "aws", "lambda", "serverless", "dynamo"],
+  "keywords": [
+    "dynamodb",
+    "aws",
+    "lambda",
+    "serverless",
+    "dynamo"
+  ],
   "standard": {
     "globals": [
       "describe",
