@@ -1,6 +1,6 @@
 'use strict'
 
-const unmarshalItem = require('dynamodb-marshaler').toJS
+const { unmarshall } = require('@aws-sdk/util-dynamodb')
 const diffMapper = require('./diffMapper')
 
 /**
@@ -12,8 +12,8 @@ const diffMapper = require('./diffMapper')
  */
 const dynamoDiff = function (obj1, obj2) {
   // first unmarshal both items
-  const unmarshObj1 = unmarshalItem(obj1)
-  const unmarshObj2 = unmarshalItem(obj2)
+  const unmarshObj1 = unmarshall(obj1)
+  const unmarshObj2 = unmarshall(obj2)
 
   // then determine diff between them
   return diffMapper.diff(unmarshObj1, unmarshObj2)
