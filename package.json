@@ -40,6 +40,6 @@
     "url": "https://github.com/Nordstrom/dynamo-stream-diff/issues"
   },
   "dependencies": {
-    "dynamodb-marshaler": "^2.0.0"
+    "@aws-sdk/util-dynamodb": "^3.31.0"
   }
 }
